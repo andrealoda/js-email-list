@@ -19,14 +19,21 @@ in pagina inserisco ogni elemento dell'array in una riga della lista.
 
 const endPoint = 'https://flynn.boolean.careers/exercises/api/random/mail'
 const emailUl = document.getElementById('email-list')
-const emailLi = document.createElement('li')
 
-fetch(endPoint)
+for (let i = 0; i < 10; i++) {
+    fetch(endPoint)
     .then(response => response.json())
     .then(data => {
         console.log(data);
-
-        emailLi.innerText = data.response
+        const email = data.response
+        
+        const emailLi = document.createElement('li')
+        emailLi.innerText = email
         emailUl.appendChild(emailLi)
-
     })
+    .catch(error => {
+        console.log("Controlla l'endpoint");
+        
+    })
+}
+
