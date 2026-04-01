@@ -20,20 +20,25 @@ in pagina inserisco ogni elemento dell'array in una riga della lista.
 const endPoint = 'https://flynn.boolean.careers/exercises/api/random/mail'
 const emailUl = document.getElementById('email-list')
 
-for (let i = 0; i < 10; i++) {
-    fetch(endPoint)
-    .then(response => response.json())
-    .then(data => {
-        console.log(data);
-        const email = data.response
-        
-        const emailLi = document.createElement('li')
-        emailLi.innerText = email
-        emailUl.appendChild(emailLi)
-    })
-    .catch(error => {
-        console.log("Controlla l'endpoint");
-        
-    })
+function getAndPrintEmails() {
+    emailUl.innerText = "";
+
+    for (let i = 0; i < 10; i++) {
+        fetch(endPoint)
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                const email = data.response
+
+                const emailLi = document.createElement('li')
+                emailLi.innerText = email
+                emailUl.appendChild(emailLi)
+            })
+            .catch(error => {
+                console.log("Controlla l'endpoint");
+
+            })
+    }
 }
 
+getAndPrintEmails();
