@@ -12,3 +12,6 @@ Bonus
 
 Abbellire con CSS o Bootstrap
 Inserire un bottone che al click faccia il fetch altre 10 mail (sostituendo le altre)
+
+
+typescripting effect explained @ https://www.youtube.com/watch?v=MiTJnYHX3iA

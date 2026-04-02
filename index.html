@@ -1,18 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Typewritten list of emails</title>
 </head>
+
 <body>
+    <div class="main">
+        <div class="container p-3 mx-auto ">
 
-    <h1 class="title">LISTA DI EMAIL</h1>
 
-    <ul id="email-list"></ul>
+            <div class="card border border-4 border-dark-subtle shadow p-3 mb-5 bg-body-tertiary rounded" style="min-width: 20rem;">
+                <img src="./assets/typewriter.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">RANDOM EMAILS LIST</h5>
+                </div>
+                <ul class="list-group list-group-flush text-start" id="email-list">
+                </ul>
+                <div class="card-body text-center">
+                    <button type="submit" id="reload-btn" class="rounded bg-success text-white px-2 py-1">AGGIORNA LA LISTA</button>
 
-    <button type="submit" id="reload-btn">AGGIORNA LA LISTA</button>
-    
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
     <script src="./assets/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
