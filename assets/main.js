@@ -47,7 +47,7 @@ function getAndPrintEmails() {
 }
 
 // genera la lista all'apertura della pagina
-getAndPrintEmails();
+// getAndPrintEmails();
 
 // genera una nuova lista premendo il pulsante
 reloadBtn.addEventListener('click', () => {
@@ -57,7 +57,7 @@ reloadBtn.addEventListener('click', () => {
 })
 
 
-
+setTimeout(getAndPrintEmails, 2800);
  
 
 
